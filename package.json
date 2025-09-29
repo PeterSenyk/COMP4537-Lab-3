@@ -1,0 +1,16 @@
+{
+  "name": "comp4537-lab-3",
+  "version": "1.0.0",
+  "description": "COMP4537 Lab 3 - Node.js Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node app.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": ["nodejs", "server", "comp4537"],
+  "author": "",
+  "license": "ISC"
+}

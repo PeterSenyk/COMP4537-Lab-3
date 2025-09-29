@@ -7,7 +7,7 @@ class Utils {
         return now.toString();
     }
     
-    static handleGetDate(res, query) {
+    static handleGetDate(req, res, query) {
         const name = query.name || messages.noName;
 
         const serverTime = Utils.getDate();
@@ -15,7 +15,7 @@ class Utils {
         res.end(message);
     }
 
-    static handleWriteFile(res, query) {
+    static handleWriteFile(req, res, query) {
         const text = query.text;
         
         if (!text) {
@@ -37,7 +37,7 @@ class Utils {
         }
     }
 
-    static handleReadFile(res, pathname) {
+    static handleReadFile(req, res, query, pathname) {
         const pathParts = pathname.split('/');
         const filename = pathParts[pathParts.length - 1] || 'file.txt';
         
